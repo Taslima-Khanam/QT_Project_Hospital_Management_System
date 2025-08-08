@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdminPage</class>
+ <widget class="QDialog" name="AdminPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>851</width>
+    <height>616</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>851</width>
+     <height>621</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(250, 192, 255);</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="page">
+    <widget class="QLabel" name="image">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>841</width>
+       <height>611</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="doctorBtn">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>100</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(145, 0, 73);
+font: 16pt &quot;Baskerville Old Face&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Manage Doctors/Staff</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="viewappBtn">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>100</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(145, 0, 73);
+font: 16pt &quot;Baskerville Old Face&quot;;</string>
+     </property>
+     <property name="text">
+      <string>View Appointments</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>300</y>
+       <width>200</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(145, 0, 73);
+font: 16pt &quot;Baskerville Old Face&quot;;</string>
+     </property>
+     <property name="text">
+      <string>View Reports</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="logoutBtn">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>300</y>
+       <width>180</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(145, 0, 73);
+font: 16pt &quot;Baskerville Old Face&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Log Out</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <widget class="QPushButton" name="add">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>170</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(145, 0, 73);
+font: 16pt &quot;Baskerville Old Face&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Add Doctors/Staff</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>290</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(145, 0, 73);
+font: 16pt &quot;Baskerville Old Face&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Remove Doctors/Staff</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="back">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>410</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(145, 0, 73);
+font: 16pt &quot;Baskerville Old Face&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Back</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_3">
+    <widget class="QTableWidget" name="userTable">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>150</y>
+       <width>571</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Lucida Sans Unicode&quot;;
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+     </property>
+     <column>
+      <property name="text">
+       <string>User Name</string>
+      </property>
+      <property name="font">
+       <font>
+        <family>Nirmala UI</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Role</string>
+      </property>
+      <property name="font">
+       <font>
+        <family>Nirmala UI</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Status</string>
+      </property>
+      <property name="font">
+       <font>
+        <family>Nirmala UI</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Action</string>
+      </property>
+      <property name="font">
+       <font>
+        <family>Nirmala UI</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="add2">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>70</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(145, 0, 73);
+font: 16pt &quot;Baskerville Old Face&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Add</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="back_2">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>500</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(145, 0, 73);
+font: 16pt &quot;Baskerville Old Face&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Back</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="appointmentsPage">
+    <widget class="QPushButton" name="back_4">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>480</y>
+       <width>161</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(145, 0, 73);
+font: 16pt &quot;Baskerville Old Face&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Back</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>40</y>
+       <width>571</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 36pt &quot;Algerian&quot;;
+color: rgb(243, 0, 243);</string>
+     </property>
+     <property name="text">
+      <string>Manage Appointments</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>170</y>
+       <width>691</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 16pt &quot;Sans Serif Collection&quot;;
+color: rgb(0, 0, 0);</string>
+     </property>
+     <column>
+      <property name="text">
+       <string>Patients Name</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Doctor</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Date</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Problem</string>
+      </property>
+     </column>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_5">
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>70</y>
+       <width>351</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 36pt &quot;Algerian&quot;;
+color: rgb(243, 0, 243);</string>
+     </property>
+     <property name="text">
+      <string>View Reports</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="showBtn">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>230</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(145, 0, 73);
+font: 16pt &quot;Baskerville Old Face&quot;;</string>
+     </property>
+     <property name="text">
+      <string>All Registered Patients IDs</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="back_7">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>240</y>
+       <width>171</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(145, 0, 73);
+font: 16pt &quot;Baskerville Old Face&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Patient Details</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="back_8">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>470</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 0, 0);
+background-color: rgb(200, 200, 200);
+font: 16pt &quot;Baskerville Old Face&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Back</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_4">
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>40</y>
+       <width>721</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 36pt &quot;Algerian&quot;;
+color: rgb(243, 0, 243);</string>
+     </property>
+     <property name="text">
+      <string>search patient information</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>200</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 20pt &quot;Imprint MT Shadow&quot;;
+color: rgb(163, 2, 150);</string>
+     </property>
+     <property name="text">
+      <string>Patients Id</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_3">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>200</y>
+       <width>271</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 20pt &quot;Microsoft YaHei&quot;;
+color: rgb(0, 0, 0);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="searchBtn">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>350</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(145, 0, 73);
+font: 16pt &quot;Baskerville Old Face&quot;;</string>
+     </property>
+     <property name="text">
+      <string>View Details</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="back_14">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>350</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(145, 0, 73);
+font: 16pt &quot;Baskerville Old Face&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Back</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
