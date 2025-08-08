@@ -1,0 +1,5 @@
+1232,,,Male,A+,01-01-2000,12:00:00 AM,,General Ward,
+123111,,,Male,A+,01-01-2000,12:00:00 AM,,General Ward,
+Arina,,,Female,A+,01-01-2000,12:00:00 AM,,General Ward,
+1414,Arina,,Male,A+,07-08-2025,05:43:23 PM,,General Ward,
+1111,,,Female,B-,01-02-2000,01:00:00 AM,,Non-AC Cabin,

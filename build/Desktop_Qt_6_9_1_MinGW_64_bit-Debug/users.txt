@@ -1,0 +1,2 @@
+Saiba,receptionist,active
+Samira,Doctor,active
